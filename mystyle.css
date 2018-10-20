@@ -6,11 +6,15 @@
     margin: 0;
     text-decoration: none;
 }
+/* Background Homepage ka */
 
 body {
-background-color: #ffff;
+background-image: url("https://i.imgur.com/Q7YHxBP.jpg");
+    background-color: #fff;
 
 }
+
+/* Ye Footer hai, bottom patti */
 
 footer{ 
   position:relative; 
@@ -18,12 +22,37 @@ footer{
   width:100%; 
   height:100px; 
 }
-footer{ background:#3A3333; }
+footer{ background-image: url("https://i.imgur.com/1u7V3B8.png"); }
 * {
   font-family: 'Vollkorn', Arial, serif;
   font-size: 1em; 
 }
 
+/* Ye Footer me follow wala */
+.icon-bar {
+    width: 40%;
+    overflow: auto;
+}
+
+.icon-bar a {
+    float: left;
+    width: 20%;
+    text-align: center;
+    padding: 15px 0;
+    transition: all 0.3s ease;
+    color: #feffed;
+    font-size: 36px;
+}
+
+.icon-bar a:hover {
+    background-color: #000;
+}
+
+.active {
+    background-color: #3a3333;
+}
+
+/* Ye Menu aur logo hai, upar wala */
 .header-container {
   width: 100%;
   display: flex;
@@ -60,6 +89,7 @@ footer{ background:#3A3333; }
       color: #c14400;
       border-bottom-color: #c14400; 
 }
+/* Ye Dropdown Settings ke liye hai */
 
 .drop-menu {
   display: flex;
@@ -172,5 +202,82 @@ footer{ background:#3A3333; }
   .logo {
     margin: -30;
   }
-
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
+
+
+
+/* Gallary Hai ye */
+.container1{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+img{
+  width:500px;
+  height:350px;
+  margin: 10px;
+  transition:all .8s;
+}
+
+
+img:hover{
+  transform:scale(1.05);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Banner Starts Here */
+header {
+  background-position: 30px 20px, 50% 50%;
+  background-image: url(../img/it-logo.svg), url(../img/hero-bg.jpg);
+  padding-bottom: 50px; }
+  header .logo {
+    height: 50px;
+    width: 50px;
+    float: left;
+    margin: 10px 0 0 30px; }
+    header .logo path {
+      fill: rgba(0, 0, 0, 0.4); }
+  header h1 {
+    text-align: center;
+    font-size: 72px;
+    font-weight: 700;
+    color: #24241d;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 20px;
+    clear: both;
+    padding-top: 30px; }
+    header h1 span {
+      display: inline-block;
+      padding: 0.2em 0.5em;
+      border: #24241d solid 10px; }
+  header .kicker {
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #24241d;
+    line-height: 1; }
+
+@media (max-width: 640px) {
+  header {
+    background-position: 20% 20px, 50% 50%; }
+    header nav {
+      float: none;
+      text-align: center;
+      padding-top: 60px; }
+    header h1 {
+      padding-top: 0px; } }
